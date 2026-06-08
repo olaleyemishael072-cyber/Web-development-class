@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Display</title>
+</head>
+
+<body>
+    <h1>CSS Display Activity</h1>
+    <p>Click the buttons to see how display works (none, inline, block).</p>
+
+    <!-- LAYOUT 1 -->
+    <div class="section">
+        <h2>Layout 1: Default (Block)</h2>
+        <div id="box1" class="box">
+            <img src="https://images.search.yahoo.com/search/images;_ylt=AwrjYqWqY_NpSQIAM_ZXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?p=jpeg+images&th=383&tw=474&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F31256342%2Fpexels-photo-31256342.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-optical-chemist-340351297-31256342.jpg%26fm%3Djpg&rurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fjpg%2520images%2F&size=1853KB&name=Jpg+Images+Photos%2C+Download+The+BEST+Free+Jpg+Images+Stock+Photos+%26+HD+Images&oid=3&h=3660&w=4518&turl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.VdDc3iT3PCrJnnsiThNzGgHaF_%3Fpid%3DApi&tt=Jpg+Images+Photos%2C+Download+The+BEST+Free+Jpg+Images+Stock+Photos+%26+HD+Images&sigr=5hkjW11F5Uwt&sigit=9UrTOtij1emR&sigi=84poAGyC9q9t&sign=GTbMhIXrdWgD&sigt=GTbMhIXrdWgD">
+            <p>This is a block element</p>
+        </div>
+        <button onclick="hide('box1')">Hide</button>
+        <button onclick="showBlock('box1')">Show Block</button>
+        <button onclick="reset('box1')">Reset</button>
+    </di
+    <!-- LAYOUT 2 -->
+    <div class="section">
+        <h2>Layout 2: Inline</h2>
+        <div id="box2" class="box">
+            <img src="">
+            <img src="https://via.plhttps://images.search.yahoo.com/search/images;_ylt=AwrhbbMAavNpQwIArRNXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Ny?p=Jpg+Photos%2C+Download+The+BEST+Free+Jpg+Stock+Photos+%26+HD+Images&imgurl=https%3A%2F%2Fwww.bing.com%2Fimages%2Fsearch%3Fview%3DdetailV2%26ccid%3Dyt4C9kb9%26id%3D49011BEBF99E9044AB911C745093E869134514A5%26thid%3DOIP.yt4C9kb9Jltc6nYkWkh5VQHaH1%26mediaurl%3Dhttps%3A%2F%2Fimages.pexels.com%2Fphotos%2F10434029%2Fpexels-photo-10434029.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-wanderingpickle-10434029.jpg%26fm%3Djpg%26exph%3D2313%26expw%3D2188%26q%3Djpeg%2520images%2520free%2520download%26ck%3D97A80EB4F485632108B1B4315281A626%26idpp%3Drc%26idpview%3Dsingleimage%26form%3Drc2idp&name=jpeg+images+free+download1&turl=https%3A%2F%2Fsp.yimg.com%2Fib%2Fth%2Fid%2FOIP.yt4C9kb9Jltc6nYkWkh5VQHaH1%3Fpid%3DApi%26w%3D148%26h%3D148%26c%3D7%26dpr%3D2%26rs%3D1&tt=jpeg+images+free+download1&sigit=V96nZVjEsVOe&sigi=N1UIcFqwiv6X&sign=15aLX8wSrOHc&sigt=15aLX8wSrOHcaceholder.com/100">
+            <img src="https://images.search.yahoo.com/search/images;_ylt=AwrhbbMAavNpQwIAuRNXNyoA;_ylu=Y29sbwNiZjEEcG9zAzMEdnRpZAMEc2VjA3Ny?p=6.1+million%2B+Stunning+Free+Images+to+Use+Anywhere+-+Pixabay&imgurl=https%3A%2F%2Fwww.bing.com%2Fimages%2Fsearch%3Fview%3DdetailV2%26ccid%3DAvZd6eRO%26id%3D18525E6D304077FEF76BEDB6B0180342D02BCA30%26thid%3DOIP.AvZd6eROqpgqwHH7hnxR_wHaFj%26mediaurl%3Dhttps%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2025%2F02%2F04%2F23%2F03%2Ffish-9382908_1280.jpg%26exph%3D960%26expw%3D1280%26q%3Djpeg%2520images%2520free%2520download%26ck%3D24658C31629AC5EF1B87224E2916412F%26idpp%3Drc%26idpview%3Dsingleimage%26form%3Drc2idp&name=jpeg+images+free+download1&turl=https%3A%2F%2Fsp.yimg.com%2Fib%2Fth%2Fid%2FOIP.AvZd6eROqpgqwHH7hnxR_wHaFj%3Fpid%3DApi%26w%3D148%26h%3D148%26c%3D7%26dpr%3D2%26rs%3D1&tt=jpeg+images+free+download1&sigit=Lj9PBCaVkXjS&sigi=GDPriSsn7Nh6&sign=15aLX8wSrOHc&sigt=15aLX8wSrOHc">
+        </div>
+        <button onclick="hide('box2')">Hide</button>
+        <button onclick="showInline('box2')">Show Inline</button>
+        <button onclick="reset('box2')">Reset</button>
+    </div>
+
+    <!-- LAYOUT 3 -->
+    <div class="section">
+        <h2>Layout 3: Paragraph Box</h2>
+        <div id="box3" class="box">
+            <p>This paragraph is inside a box.</p>
+            <p>Watch how it changes!</p>
+        </div>
+        <button onclick="hide('box3')">Hide</button>
+        <button onclick="showBlock('box3')">Show Block</button>
+        <button onclick="showInline('box3')">Inline</button>
+        <button onclick="reset('box3')">Reset</button>
+    </div>
+
+    <!-- LAYOUT 4 -->
+    <div class="section">
+        <h2>Layout 4: Mixed Content</h2>
+        <div id="box4" class="box">
+            <img src="2https://images.search.yahoo.com/search/images;_ylt=AwrhbbMAavNpQwIAuxNXNyoA;_ylu=Y29sbwNiZjEEcG9zAzMEdnRpZAMEc2VjA3Ny?p=6.1+million%2B+Stunning+Free+Images+to+Use+Anywhere+-+Pixabay&imgurl=https%3A%2F%2Fwww.bing.com%2Fimages%2Fsearch%3Fview%3DdetailV2%26ccid%3DHGXEgm4L%26id%3D18525E6D304077FEF76B0E3191AD59F558680266%26thid%3DOIP.HGXEgm4LPA6ARKWZk7O-iwHaE8%26mediaurl%3Dhttps%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2025%2F03%2F03%2F17%2F47%2Fcliffs-9444605_1280.jpg%26exph%3D854%26expw%3D1280%26q%3Djpeg%2520images%2520free%2520download%26ck%3D62EF95834EC3E431532A91BF519909D4%26idpp%3Drc%26idpview%3Dsingleimage%26form%3Drc2idp&name=jpeg+images+free+download3&turl=https%3A%2F%2Fsp.yimg.com%2Fib%2Fth%2Fid%2FOIP.HGXEgm4LPA6ARKWZk7O-iwHaE8%3Fpid%3DApi%26w%3D148%26h%3D148%26c%3D7%26dpr%3D2%26rs%3D1&tt=jpeg+images+free+download3&sigit=rhCjChclBlfF&sigi=ubDXcs2VqAUc&sign=MYAT6XNmrdeD&sigt=MYAT6XNmrdeD">
+            <p>Image + text together</p>
+        </div>
+        <button onclick="hide('box4')">Hide</button>
+        <button onclick="showInline('box4')">Inline</button>
+        <button onclick="showBlock('box4')">Block</button>
+        <button onclick="reset('box4')">Reset</button>
+    </div>
+
+    <!-- LAYOUT 5 -->
+    <div class="section">
+        <h2>Layout 5: Multiple Boxes</h2>
+        <div id="box5a" class="box small">Box A</div>
+        <div id="box5b" class="box small">Box B</div>
+        <div id="box5c" class="box small">Box C</div>
+        <br>
+        <button onclick="hide('box5a')">Hide A</button>
+        <button onclick="showInline('box5a')">Inline A</button>
+        <button onclick="reset('box5a')">Reset A</button>
+    </div>
+
+    <!-- LAYOUT 6 -->
+    <div class="section">
+        <h2>Layout 6: Gallery</h2>
+        <div id="box6" class="box">
+            <img src="https://images.search.yahoo.com/images/view;_ylt=Awr.xQf2bfNppL40bQqJzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzY2YTZjNDBkZmJhNmFmZDAwMjcwMGZlOWQzNzIzMDcwBGdwb3MDMTgEaXQDYmluZw--?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Djpeg%2Bimages%2Bfree%2Bdownload%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D18&w=5300&h=3752&imgurl=images.pexels.com%2Fphotos%2F31792468%2Fpexels-photo-31792468.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-optical-chemist-340351297-31792468.jpg%26fm%3Djpg&rurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2F1080x1920%2520backgrounds%2F&size=3145KB&p=jpeg+images+free+download&oid=66a6c40dfba6afd002700fe9d3723070&fr2=piv-web&fr=&tt=1080x1920+Backgrounds+Photos%2C+Download+The+BEST+Free+1080x1920+Backgrounds+Stock+Photos+%26+HD+Images&b=0&ni=21&no=18&ts=&tab=organic&sigr=z02nh8MDGtWi&sigb=6Wt29uQJs1BC&sigi=7flFde4O0nQp&sigt=2d9XpoASpq38&.crumb=Szj/l4JjmjM&fr2=piv-web">
+            <img src="https://images.search.yahoo.com/images/view;_ylt=Awr.xQf2bfNppL40cgqJzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzI3YTk1OWFiODZiZjU0YzFiMzhlNzBiZTZmNmQ0YzIyBGdwb3MDMjMEaXQDYmluZw--?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Djpeg%2Bimages%2Bfree%2Bdownload%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D23&w=6000&h=4000&imgurl=images.pexels.com%2Fphotos%2F863963%2Fpexels-photo-863963.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-blaque-x-863963.jpg%26fm%3Djpg&rurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ffree%2520wallpaper%2F&size=1586KB&p=jpeg+images+free+download&oid=27a959ab86bf54c1b38e70be6f6d4c22&fr2=piv-web&fr=&tt=40%2C000%2B+Best+Free+Wallpaper+Downloads+%C2%B7+100%25+Free+Wallpaper+Photos+%C2%B7+Pexels+Stock+Photos&b=0&ni=21&no=23&ts=&tab=organic&sigr=2_apNt4HBOHy&sigb=HsJ9mszVOsdf&sigi=qeb05a3Lta3A&sigt=knrqrxFC74cG&.crumb=Szj/l4JjmjM&fr2=piv-web">
+            <img src="https://via.placeholder.com/120">
+        </div>
+        <button onclick="hide('box6')">Hide</button>
+        <button onclick="showInline('box6')">Inline</button>
+        <button onclick="showBlock('box6')">Block</button>
+        <button onclick="reset('box6')">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
