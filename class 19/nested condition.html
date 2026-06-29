@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Theme Park Checker</title>
+</head>
+
+<body>
+
+    <h2>🎢 Theme Park Entry Checker</h2>
+
+    <label>Enter Your Age:</label>
+    <input type="number" id="age">
+
+    <br><br>
+
+    <label>Do You Have a Ticket?</label>
+    <select id="ticket">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="checkAccess()">
+        Check Access
+    </button>
+
+    <h3 id="result"></h3>
+
+    <script>
+
+        function checkAccess() {
+
+            let age = document.getElementById("age").value;
+            let ticket = document.getElementById("ticket").value;
+
+            if (ticket === "yes") {
+
+                if (age >= 18) {
+
+                    document.getElementById("result").innerHTML =
+                        "✅ Welcome! You can access ALL rides.";
+
+                }
+                else if (age >= 13) {
+
+                    document.getElementById("result").innerHTML =
+                        "🎠 Welcome! You can access most rides.";
+
+                }
+                else if (age >= 5) {
+
+                    document.getElementById("result").innerHTML =
+                        "😊 Welcome! You can access children's rides.";
+
+                }
+                else {
+
+                    document.getElementById("result").innerHTML =
+                        "👶 Sorry, you are too young for the rides.";
+
+                }
+
+            }
+            else {
+
+                document.getElementById("result").innerHTML =
+                    "❌ You need a ticket to enter the park.";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
