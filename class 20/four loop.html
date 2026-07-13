@@ -2,16 +2,15 @@
 <html>
 
 <head>
-    <title>For loop activity</title>
-</html>
-  
+    <title>For Loop Activity</title>
+</head>
+
 <body>
 
-    <h2>For loop activity</h2>
+    <h2>For Loop Activity</h2>
 
-    <p>click the button to display numbers from 1 to 10</p>
-    <button onclick="ShowNumbers()">Show numbers</button>
-
+    <p>Click the button to display numbers from 1 to 10.</p>
+    <button onclick="showNumbers()">Show Numbers</button>
     <h3 id="output"></h3>
 
     <script>
@@ -25,7 +24,12 @@
                 text += i + "<br>";
 
             }
+
             document.getElementById("output").innerHTML = text;
+
         }
+
     </script>
 </body>
+
+</html>
