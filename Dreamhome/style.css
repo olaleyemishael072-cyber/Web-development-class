@@ -1,0 +1,117 @@
+.about-hero {
+
+    background: #198754;
+
+    padding: 100px 20px;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.card {
+
+    border: none;
+
+    transition: .3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+}
+
+h2 {
+
+    margin-bottom: 30px;
+
+    font-weight: bold;
+
+}
+
+section {
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+}
+
+/* ========================= */
+/* PROPERTIES PAGE */
+/* ========================= */
+
+.property-banner {
+
+    background: #0d6efd;
+    padding: 90px 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.property-card {
+
+    transition: .4s;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.property-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+
+}
+
+.property-card img {
+
+    height: 240px;
+    object-fit: cover;
+
+}
+
+.badge {
+
+    font-size: 14px;
+    padding: 8px 12px;
+
+}
+/* ========================= */
+/* PROPERTY DETAILS */
+/* ========================= */
+
+.details-banner {
+    background: #198754;
+    padding: 90px 20px;
+    color: white;
+    text-align: center;
+}
+
+.list-group-item {
+    font-size: 18px;
+}
+
+table {
+    background: white;
+}
+
+.card {
+    border: none;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 10px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exam Checker</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container {
+        background-color: #fff;
+        width: 420px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+    }
+
+    input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    }
+
+    button {
+        background: #007BFF;
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    }
+
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #Output {
+        margin-top: 20px;
+        text-align: left;
+        
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Exam Result Checker</h2>
+    <p>Enter scores separated by commas</p>
+    <input type="text" id="scoresInput" placeholder="85, 90, 78, 92">
+
+    <br>
+    <button onclick="checkResults()">Check Results</button>
+    <div id="resultsOutput"></div>
+
+</div>
+</body>
+</html>

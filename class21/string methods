@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Methods Activity</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0e68c; /* Changed background color */
+            text-align: center;
+            padding: 30px;
+        }
+
+        .box {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            background: green; /* Changed button color to green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkgreen;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue; /* Changed output text color to blue */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>✨ JavaScript String Methods</h2>
+
+        <input type="text" id="text" placeholder="Type your name">
+
+        <br>
+
+        <button onclick="upper()">UPPERCASE</button>
+        <button onclick="lower()">lowercase</button>
+        <button onclick="count()">Count</button>
+        <button onclick="trimText()">Trim</button>
+        <button onclick="reverseText()">Reverse</button> <!-- New Reverse button -->
+        <button onclick="firstLetter()">First Letter</button> <!-- New First Letter button -->
+
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function upper() {
+            let t = document.getElementById("text").value;
+            document.getElementById("output").innerHTML = t.toUpperCase();
+        }
+        function lower() {
+            let t = document.getElementById("text").value;
+            document.getElementById("output").innerHTML = t.toLowerCase();
+        }
+        function count() {
+            let t = document.getElementById("text").value;
+            document.getElementById("output").innerHTML = "Characters: " + t.length;
+        }
+        function trimText() {
+            let t = document.getElementById("text").value;
+            document.getElementById("output").innerHTML = t.trim();
+        }
+        function reverseText() {
+            let t = document.getElementById("text").value;
+            document.getElementById("output").innerHTML = t.split("").reverse().join("");
+        }
+        function firstLetter() {
+            let t = document.getElementById("text").value;
+            document.getElementById("output").innerHTML = t.charAt(0);
+        }
+    </script>
+
+</body>
+
+</html>
