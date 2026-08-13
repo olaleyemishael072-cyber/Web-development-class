@@ -115,3 +115,36 @@ table {
 img {
     border-radius: 10px;
 }
+
+/* ========================= */
+/* GALLERY PAGE */
+/* ========================= */
+
+.gallery-banner {
+    background: #6f42c1;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.gallery-card {
+    border: none;
+    overflow: hidden;
+    transition: .4s;
+    border-radius: 12px;
+}
+
+.gallery-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+}
+
+.gallery-card:hover img {
+    transform: scale(1.08);
+}
