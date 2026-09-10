@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Activity</title>
+    <style>
+        body { font-family: Arial;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px; }
+
+        .container { max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+        h1 { color: #333;
+            text-align: center; }
+
+        .input-group { margin: 15px 0; }
+
+        input { width: 100%;
+            padding: 10px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            font-size: 14px; box-sizing: border-box; }
+
+        button { width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px 0;
+            transition: 0.3s; }
+
+        button:hover { background: #764ba2; }
+
+        .output { background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            min-height: 50px; }
+
+        .result { color: #333;
+            font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Array Activity</h1>
+        <div class="input-group">
+            <input type="text" id="item" placeholder="Enter number (comma-separated for multiple)">
+        </div>
+        <button onclick="addItem()">Add to Array</button>
+        <button onclick="removeItem()">Remove Last</button>
+        <button onclick="sortArray()">Sort Array</button>
+        <button onclick="clearArray()">Clear Array</button>
+        <div class="output">
+            <p class="result">Array: <span id="arrayDisplay">[]</span></p>
+            <p class="result">Length: <span id="length">0</span></p>
+        </div>
+    </div>
+    <script>
+        let arr = [];
+        function addItem() {
+            const val = document.getElementById('item').value.trim();
+            if (val) arr = arr.concat(val.split(',').map(x => x.trim()));
+            document.getElementById('item').value = '';
+            updateDisplay();
+        }
+        function removeItem() { arr.pop(); updateDisplay(); }
+        function sortArray() { arr.sort(); updateDisplay(); }
+        function clearArray() { arr = []; updateDisplay(); }
+        function updateDisplay() {
+            document.getElementById('arrayDisplay').textContent = JSON.stringify(arr);
+            document.getElementById('length').textContent = arr.length;
+        }
+    </script>
+</body>
+</html>

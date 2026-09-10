@@ -89,3 +89,7 @@ function validateForm() {
     return false;
 
 }
+
+function showoffice() {
+alert("📍 Our office is located at lekki,lagos Nigeria. We look forward to welcoming you!");
+}
